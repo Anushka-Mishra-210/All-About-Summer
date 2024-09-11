@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #add8e6; /* Light blue background */
+        }
+        header {
+            background-image: url('headeriwt.jpg'); /* Image added to the header */
+            background-size: cover;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        section h2 {
+            color: #333;
+            cursor: pointer; /* Change cursor to pointer for clickable sections */
+        }
+        .details {
+            display: none; /* Hide details by default */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .card {
+            width: 300px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .card-content {
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>ALL THINGS SUMMER</h1>
+        <p>An online portal to embrace all things summer!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#owner">Owner</a>
+<a href="#franchise">Franchise</a>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our site where we sell anything and everything you may need to enjoy summers to their fullest potential!!!!!! ☀️🏖️</p>
+<p> Some of our products are dispalyed as follows: </p>
+
+        <div class="container">
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\@lulubrewin 🦋✨.jpg" alt="Service 1">
+                <div class="card-content" onclick="toggleDetails('details1')">
+                    <h3>Beach Essentials</h3>
+                    <p>Anything you may need for being summer ready at the beach!! 🌊🏖️🩴🪣☀️</p>
+                </div>
+                <div class="details" id="details1">
+                    <p>Additional details about Service 1.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\Face fans.jpg" alt="Service 2">
+                <div class="card-content" onclick="toggleDetails('details2')">
+                    <h3>Face Fans</h3>
+                    <p>Buy face fans to keep yourself cool and calm!! 🪭</p>
+                </div>
+                <div class="details" id="details2">
+                    <p>Additional details about Service 2.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\Dreamy sunglasses 😎.jpg" alt="Service 3">
+                <div class="card-content" onclick="toggleDetails('details3')">
+                    <h3>Sunglasses</h3>
+                    <p>Get yourself some sunglasses!!!!!!!! 🕶️</p>
+                </div>
+                <div class="details" id="details3">
+                    <p>Additional details about Service 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p><h2>"All About Summer: Embrace the Sunshine with Us!"</h2>
+
+<p>Welcome to All About Summer, where we're dedicated to helping you make the most out of every sunny moment! Our company was born from a passion for the warmth of summer days, the sound of waves crashing on the shore, and the joy of outdoor adventures.</p>
+
+<p>At All About Summer, we believe that summer isn't just a season; it's a lifestyle. Whether you're soaking up the sun on the beach, embarking on a thrilling hiking expedition, or simply enjoying a backyard barbecue with friends and family, we're here to enhance your experience every step of the way.</p>
+
+<p>Our mission is simple: to provide high-quality products and services that amplify the joys of summer living. From stylish swimwear and beach accessories to innovative outdoor gear and eco-friendly picnic essentials, we've curated a diverse range of offerings to cater to all your summer needs.</p>
+
+
+        <p></p>
+        <p></p>
+    </section>
+    <section id="services">
+        <h2>Services</h2>
+        <div class="container">
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\download (1).jpg" alt="Service 1">
+                <div class="card-content" onclick="toggleDetails('details1')">
+                    <h3>Hair Clips</h3>
+                    <p>Buy our hair clips to give you that cute chic look throughout summer!</p>
+                </div>
+                <div class="details" id="details1">
+                    <p></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\nature.jpg" alt="Service 2">
+                <div class="card-content" onclick="toggleDetails('details2')">
+                    <h3>Camera</h3>
+                    <p>Buy our cameras to capture beautiful memories of the summer!! 📸</p>
+                </div>
+                <div class="details" id="details2">
+                    <p>Additional details about Service 2.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\Nude Palette Pure Silk Scrunchie Collection.jpg" alt="Service 3">
+                <div class="card-content" onclick="toggleDetails('details3')">
+                    <h3>Scrunchies</h3>
+                    <p>Buy our srunchies to keep those luscious hair up and protected in the summer!!!! 🌟</p>
+                </div>
+                <div class="details" id="details3">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+</section>
+    <section id ="owner">
+        <h2>About the Owner</h2>
+<img src="C:\Users\mishr\Downloads\OWNER.jpg" alt="Owner" width = "1450">
+        <p>Discover the driving force behind All About Summer – our visionary founder, Anushka Mishra. With a deep-rooted passion for sunshine, adventure, and all things summer, the owner embarked on a mission to share the joy of the season with the world.</p>
+        <!-- Include description, images, franchises, etc. -->
+    </section>
+
+    
+    <section id="franchise">
+        <h2>Franchise</h2>
+        <p>Our Other Outlets in different parts of the world:</p>
+        <p> 1. Tokyo, Japan </p>
+<p>2. Buenos Aires</p>
+<p>3. Kyoto, Japan</p>
+<p>4. Budapest, Hungary,/p>
+<p>5. Bengaluru, India</p>
+<p>6. Gurgaon, India</p>
+<p>7. Nice, France</p>
+<p>8. New Orleans, France</p>
+<p>9. Las Vegas, USA</p>
+<p>10. Melbourne, Australia</p>
+
+        <!-- Include owner's biography, achievements, etc. -->
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us for any inquiries or feedback.</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>Email: <a href="mishraanushka6989613@gmail.com">mishraanushka6989613@gmail.com</a></p>
+        <p>Phone: +91 9305353935</p>
+        <p>Address: 475 Sector 'C' Vishwa Bank Barra Kanpur, India</p>
+    </section>
+ <section id="end">
+        <img src="C:\Users\mishr\Downloads\headeriwt.jpg" width ="1450">
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Anushka's Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
